@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <LangVersion>12</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Title>IdeaPunctFix</Title>
+    <Description>JetBrains IDE 智能标点 — 像 HBuilder 一样自动将中文标点转为英文标点</Description>
+    <Company>IdeaPunctFix</Company>
+    <Product>IdeaPunctFix</Product>
+    <Version>1.0.0</Version>
+    <AssemblyName>IdeaPunctFix</AssemblyName>
+    <RootNamespace>IdeaPunctFix</RootNamespace>
+  </PropertyGroup>
+
+  <!-- 独立发布配置（不需要 .NET 运行时） -->
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DebugType>embedded</DebugType>
+    <PublishSingleFile>true</PublishSingleFile>
+    <SelfContained>true</SelfContained>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+  </PropertyGroup>
+
+</Project>
